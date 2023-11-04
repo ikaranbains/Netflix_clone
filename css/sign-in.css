@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    position: relative;
+    overflow-x: hidden;
+}
+
+#page1 {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-image: url(../assets/sign-in/bg3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#shade {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background: rgb(0 0 0 / 40%);
+    z-index: 9;
+}
+
+#nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2vw 2.7vw;
+    position: absolute;
+    z-index: 99;
+}
+
+#nav>img {
+    width: 190px;
+    filter: brightness(50%);
+}
+
+.lang {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(211, 211, 211);
+    background-color: transparent;
+    border-radius: 4px;
+    padding: 0 0.4vw;
+    border: 0.5px solid #999797;
+    width: 10vw;
+}
+
+.lang:focus-within {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+.translate {
+    width: 20px;
+    background-color: transparent;
+    color: rgb(211, 211, 211);
+}
+
+#container {
+    position: absolute;
+    z-index: 20;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#card {
+    width: 30vw;
+    height: 80vh;
+    background-color: crimson;
+}
+
+#footer {
+    position: absolute;
+    z-index: 20;
+    bottom: 0;
+    height: 30vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, .75);
+    color: #646464;
+    padding: 0 13vw;
+    margin-top: 25vw;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.Fhead {
+    font-size: 17px !important;
+    font-weight: 500;
+}
+
+.Fhead span {
+    text-decoration: underline;
+}
+
+#foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 65vw;
+}
+
+.boxes {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    text-decoration: underline;
+}
+
+#footer>#foot>.boxes>h4 {
+    font-size: 14px;
+    text-align: left;
+    width: 100%;
+    font-weight: 400;
+}
+
+#footer>#foot>.boxes>h4>a {
+    color: #646464;
+}
+
+#footer .lang select {
+    padding: 0.2vw 0.6vw;
+    background-color: transparent;
+    color: rgb(211, 211, 211);
+    border: none;
+    outline: none;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+#footer h5 {
+    font-weight: 400;
+}
