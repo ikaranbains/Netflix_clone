@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins";
 }
 
 html,
@@ -20,11 +20,14 @@ body {
 
 #page1 {
     width: 100vw;
-    height: 100vh;
-    position: relative;
-    background-image: url(../assets/sign-in/bg3.jpg);
+    min-height: 139vh;
+    background-image: url(../assets/sign-in/sign-bg.jpg);
     background-size: cover;
     background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 #shade {
@@ -33,6 +36,8 @@ body {
     position: absolute;
     background: rgb(0 0 0 / 40%);
     z-index: 9;
+    top: 0;
+    left: 0;
 }
 
 #nav {
@@ -42,12 +47,13 @@ body {
     justify-content: space-between;
     padding: 1.2vw 2.7vw;
     position: absolute;
-    z-index: 99;
+    z-index: 999;
+    top: 0;
+    left: 0;
 }
 
 #nav>img {
     width: 190px;
-    filter: brightness(50%);
 }
 
 .lang {
@@ -75,35 +81,131 @@ body {
 }
 
 #container {
-    position: absolute;
-    z-index: 20;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 6vw 0;
+    position: absolute;
+    z-index: 999;
+    top: 0;
 }
 
 #card {
-    width: 30vw;
-    height: 80vh;
-    background-color: crimson;
+    width: 27vw;
+    height: 83vh;
+    background-color: rgba(0, 0, 0, .75);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+#card h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 4vw 3.3vw 2vw 3.3vw;
+}
+
+#card .m-x {
+    padding: 1vw 1vw;
+    border-radius: 5px;
+    width: 20vw;
+    background-color: #F3F3F3;
+    margin: 0 3.3vw;
+    margin-bottom: 1.8vw;
+}
+
+#card button {
+    padding: 1vw 1vw;
+    border-radius: 5px;
+    width: 20vw;
+    margin-left: 3.3vw;
+    margin-top: 2vw;
+    background-color: #E40914;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: .3px;
+    margin-bottom: 1vw;
+}
+
+#small {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 3.5vw;
+}
+
+#check {
+    width: 1vw;
+}
+
+#small #tick {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#small #tick span {
+    position: absolute;
+    left: 130%;
+    width: 10vw;
+    bottom: 4%;
+    font-size: .8rem;
+    font-weight: 300;
+    color: rgb(180, 180, 180);
+}
+
+#small h5 a {
+    font-weight: 300;
+    font-size: .8rem;
+    color: rgb(180, 180, 180);
+    text-decoration: none;
+}
+
+#small h5:hover a {
+    text-decoration: underline;
+}
+
+#card h4 {
+    font-weight: 300;
+    font-size: .9rem;
+    color: rgb(180, 180, 180);
+    margin: 1.1vw 3.6vw 1.3vw 3.6vw;
+}
+
+#card span a {
+    color: white;
+    text-decoration: none;
+}
+
+#card span:hover a {
+    text-decoration: underline;
+}
+
+#card p {
+    margin-left: 3.6vw;
+    font-size: .7rem;
+    letter-spacing: .2px;
+    color: rgb(180, 180, 180);
+}
+
+#card p span a {
+    text-decoration: none;
+    color: rgb(60, 60, 250);
 }
 
 #footer {
-    position: absolute;
-    z-index: 20;
-    bottom: 0;
-    height: 30vh;
     width: 100vw;
     background-color: rgba(0, 0, 0, .75);
     color: #646464;
-    padding: 0 13vw;
-    margin-top: 25vw;
+    padding: 3.5vw 13vw;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    position: absolute;
+    z-index: 999;
+    bottom: 0px;
 }
 
 .Fhead {
